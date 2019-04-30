@@ -6,6 +6,7 @@
   max-width: 80%;
 }
 .portfolio-items {
+  overflow: hidden;
   list-style: none;
   text-align: center;
   background-color:white;
@@ -22,10 +23,11 @@ h1, h2 {
   text-align: center;
   padding-top: 20px;
 }
-nav ul {
+nav li {
     list-style-type: none;
     text-align: center;
     color: red;
+    text-transform: uppercase;
 }
 
 
@@ -43,13 +45,22 @@ nav a {
 
 /* Media Quries*/
 @media (min-width: 768px) {
-  .portfolio-items {
-    width: 33%;
-    display:inline-table;
+  .portfolio-items li {
+    width: 49% ;
+    display:inline-block;
+    float: left;
+    height: 330px;
     }
-    div img {
-      float: right;
+    .profile-bio {
+      height: 400px;
     }
+    .profile-bio img{
+      float:right;
+    }
+    .portfolio-items li:last-of-type {
+      float:none;
+    }
+
   }
 }
 @media (min-width: 1024px) {
