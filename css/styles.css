@@ -26,15 +26,15 @@ h1, h2 {
 nav li {
     list-style-type: none;
     text-align: center;
-    color: red;
     text-transform: uppercase;
 }
 
 
 p {
   text-align: center;
-  padding-top: 5px;
-  padding-bottom: 15px;
+  font-size: 20px;
+  font-family: serif;
+
 }
 nav a {
   color: black;
@@ -42,6 +42,7 @@ nav a {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+/* ID Selectors */
 
 /* Media Quries*/
 @media (min-width: 768px) {
@@ -60,9 +61,13 @@ nav a {
     .portfolio-items li:last-of-type {
       float:none;
     }
-
+    nav li {
+      display: inline-block;
+      text-transform: uppercase;
+      padding: 10px;
+    }
+    nav ul {
+      text-align: center;
+      margin-bottom: 50px;
+    }
   }
-}
-@media (min-width: 1024px) {
-
-}
