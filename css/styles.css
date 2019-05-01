@@ -14,7 +14,7 @@
 .footer-nav li {
   display: inline-block;
   margin-right: 40px;
-  border-top: 0 solid grey;
+  border-top: 2px solid grey;
   max-width: 100%;
 }
 
@@ -28,13 +28,10 @@ nav li {
     text-align: center;
     text-transform: uppercase;
 }
-
-
 p {
   text-align: center;
   font-size: 20px;
   font-family: serif;
-
 }
 nav a {
   color: black;
@@ -47,10 +44,11 @@ nav a {
 /* Media Quries*/
 @media (min-width: 768px) {
   .portfolio-items li {
-    width: 49% ;
+    width: 49%;
     display:inline-block;
     float: left;
-    height: 330px;
+    
+
     }
     .profile-bio {
       height: 400px;
