@@ -1,15 +1,54 @@
 *{
   box-sizing: border-box;
 }
-/*Class Selectors*/
-.portfolio-items li img {
-  max-width: 80%;
+/* Base Style Selectors*/
+header {
+  background-color: lightblue;
+  padding: 1em 0;
 }
+body {
+  width: 100;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 16px;
+  margin-top: 0;
+
+}
+h1, h2 {
+  text-align: center;
+}
+nav li {
+    list-style-type: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
+p {
+  text-align: center;
+  font-size: 25px;
+  font-family: serif;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+}
+div  {
+  text-align: center;
+}
+/* ID Selectors */
+
+
+/*Class Selectors*/
 .portfolio-items {
   overflow: hidden;
   list-style: none;
   text-align: center;
-  background-color:white;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+.portfolio-items li img {
+  max-width: 70%;
+  margin: 0 auto;
 }
 .footer-nav li {
   display: inline-block;
@@ -17,55 +56,66 @@
   border-top: 2px solid grey;
   max-width: 100%;
 }
-
-/* Base Style Selectors*/
-h1, h2 {
-  text-align: center;
-  padding-top: 20px;
+.student-name {
+  float: left;
 }
-nav li {
-    list-style-type: none;
-    text-align: center;
-    text-transform: uppercase;
-}
-p {
-  text-align: center;
-  font-size: 20px;
-  font-family: serif;
-}
-nav a {
-  color: black;
+.top a {
+  float: right;
   text-decoration: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
-/* ID Selectors */
+.container {
+
+}
 
 /* Media Quries*/
 @media (min-width: 768px) {
+   h1 {
+    float: left;
+    }
+    nav li {
+      text-align: center;
+      text-transform: uppercase;
+      padding: 10px;
+      display: inline-block;
+      float: right;
+
+    }
   .portfolio-items li {
     width: 49%;
     display:inline-block;
     float: left;
-    
-
+    vertical-align: top;
     }
     .profile-bio {
       height: 400px;
     }
-    .profile-bio img{
-      float:right;
+    .profile-bio img {
+      block;
     }
     .portfolio-items li:last-of-type {
       float:none;
     }
-    nav li {
+    .footer-nav {
       display: inline-block;
-      text-transform: uppercase;
-      padding: 10px;
+      float:right;
     }
-    nav ul {
-      text-align: center;
-      margin-bottom: 50px;
+    .top {
+      display: none;
     }
   }
+
+
+
+
+
+@media (min-width: 1024px;) {
+  .portfolio-items li {
+    width: 33%;
+    display:inline-block;
+    float: left;
+    }
+  .top {
+    display: none;
+  }
+
+}
