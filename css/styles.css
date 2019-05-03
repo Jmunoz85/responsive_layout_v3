@@ -16,7 +16,9 @@ body {
   font-family: Nunito, arial, sans-serif;
   font-size: 16px;
 }
-
+nav {
+  margin-bottom: 40px;
+}
 nav a {
   color: black;
   text-decoration: none;
@@ -29,6 +31,9 @@ nav li {
     list-style-type: none;
     text-align: center;
     text-transform: uppercase;
+    padding: 10px;
+    background-color: fff;
+    margin-bottom: 10px;
 
   }
 
@@ -43,7 +48,6 @@ h1, h2 {
 
 p {
   text-align: center;
-  font-family: serif;
 }
 
 div  {
@@ -57,7 +61,9 @@ div  {
   max-width: 1200px;
   margin: 0 auto;
 }
-
+.portfolio {
+  background-color: fff;
+}
 .portfolio-items {
   overflow: hidden;
   list-style: none;
