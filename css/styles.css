@@ -135,7 +135,7 @@ div  {
       text-transform: uppercase;
       padding: 10px;
       display: inline-block;
-      color: transparent;
+      background-color: transparent;
     }
   .portfolio-items li {
     width: 50%;
@@ -176,6 +176,11 @@ div  {
     float: left;
     vertical-align: top;
     padding: 0 5px;
+    height: 350px;
+    }
+    .portfolio-items li:last-of-type {
+      float:none;
+      margin-top: 25px;
     }
 .clearfix::after {
   content:"";
