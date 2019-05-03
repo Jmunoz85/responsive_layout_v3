@@ -46,12 +46,23 @@ div  {
 
 
 /*Class Selectors*/
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .portfolio-items {
   overflow: hidden;
   list-style: none;
   text-align: center;
   padding-left: 2em;
   padding-right: 2em;
+}
+.portfolio-items li {
+  height: 500px;
+}
+.portfolio-items li p {
+  padding: 0 30px;
 }
 .portfolio-items li img {
   max-width: 70%;
@@ -70,6 +81,9 @@ div  {
 }
 .student-name {
   float: left;
+}
+.footer-nav li a {
+  text-decoration: none;
 }
 .top a {
   float: right;
@@ -148,5 +162,5 @@ div  {
   content:"";
   display: table;
   clear: both;
-}
+ }
 }
