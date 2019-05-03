@@ -110,10 +110,12 @@ div  {
 }
 .footer-nav li a {
   text-decoration: none;
+
 }
 .top a {
   float: right;
   text-decoration: none;
+  color: #666;
 }
 
 /* Media Quries*/
