@@ -134,17 +134,17 @@ div  {
       display: inline-block;
     }
   .portfolio-items li {
-    width: 49%;
+    width: 50%;
     display:inline-block;
     float: left;
     vertical-align: top;
+    padding: 0 5px;
     }
     .portfolio-items li:last-of-type {
       float:none;
       margin-top: 25px;
     }
     .profile-bio {
-      height: 400px;
     }
     .profile-bio img {
       float: right;
@@ -162,30 +162,7 @@ div  {
     }
 }
 
-
-
-
-
 @media (min-width: 1024px) {
-  .profile-bio img {
-   float: right;
-   margin: 5px 15px;
-  }
-  .portfolio-items li {
-    width: 33%;
-    display:inline-block;
-  }
-  .footer-nav ul {
-    display: inline-block;
-    float: right;
-  }
-  .top {
-    display: none;
-  }
-  .portfolio-items li:last-of-type {
-    float:none;
-    margin-top: 20px;
-  }
 
 .clearfix::after {
   content:"";
