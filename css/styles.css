@@ -135,6 +135,7 @@ div  {
       text-transform: uppercase;
       padding: 10px;
       display: inline-block;
+      color: transparent;
     }
   .portfolio-items li {
     width: 50%;
