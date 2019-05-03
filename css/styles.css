@@ -68,10 +68,6 @@ div  {
   margin-right: 40px;
   max-width: 100%;
 }
-.footer-nav li p {
-  padding-left: 10px;
-  padding-right: 10px;
-}
 .student-name {
   float: left;
 }
@@ -133,7 +129,7 @@ div  {
    margin: 5px 15px;
   }
   .portfolio-items li {
-    width: 33.3%;
+    width: 33%;
     display:inline-block;
   }
   .footer-nav ul {
