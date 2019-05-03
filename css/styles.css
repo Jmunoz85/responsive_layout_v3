@@ -15,6 +15,7 @@ body {
   margin: 0 auto;
   font-family: Nunito, arial, sans-serif;
   font-size: 16px;
+  color: #666;
 }
 nav {
   margin-bottom: 40px;
@@ -53,7 +54,11 @@ div  {
   text-align: center;
 }
 /* ID Selectors */
-
+#portfolio {
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
 
 /*Class Selectors*/
 .wrapper {
@@ -64,7 +69,8 @@ div  {
   max-width: 70%;
 }
 .portfolio {
-  background-color: fff;
+  background-color: #fff;
+  padding: 20px;
 }
 .portfolio-items {
   overflow: hidden;
