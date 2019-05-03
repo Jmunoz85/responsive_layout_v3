@@ -94,8 +94,9 @@ div  {
 .portfolio-items li img {
   max-width: 100%;
 }
-.main-footer {
-  border-top: solid lightgrey;
+.main-footer .wrapper {
+  border-top: 1px solid lightgrey;
+  margin-top: 60px;
 }
 .footer-nav ul {
   display: none;
@@ -150,9 +151,6 @@ div  {
       margin-top: 5px;
       margin-right: 5px;
       clear: both;
-    }
-    .main-footer {
-      border-top: solid lightgrey;
     }
     .footer-nav ul {
       display: inline-block;
