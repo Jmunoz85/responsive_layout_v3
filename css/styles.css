@@ -4,7 +4,6 @@
 
 /* Base Style Selectors*/
 header {
-
   padding: 1em 0;
   overflow: hidden;
 }
@@ -124,6 +123,10 @@ div  {
 
 /* Media Quries*/
 @media (min-width: 768px) {
+  header {
+    padding: 1em 0 3em;
+    overflow: hidden;
+  }
    h1 {
     text-align: center;
     }
@@ -163,7 +166,16 @@ div  {
 }
 
 @media (min-width: 1024px) {
-
+  .wrapper {
+    max-width: 1200px;
+  }
+  .portfolio-items li {
+    width: 33%;
+    display:inline-block;
+    float: left;
+    vertical-align: top;
+    padding: 0 5px;
+    }
 .clearfix::after {
   content:"";
   display: table;
