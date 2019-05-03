@@ -87,6 +87,7 @@ div  {
 }
 .portfolio-items li {
   margin-bottom: 40px;
+  height: 350px;
 }
 .portfolio-items li p {
   padding: 0 30px;
@@ -176,7 +177,6 @@ div  {
     float: left;
     vertical-align: top;
     padding: 0 5px;
-    height: 350px;
     }
     .portfolio-items li:last-of-type {
       float:none;
