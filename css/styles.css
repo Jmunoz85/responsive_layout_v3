@@ -3,7 +3,7 @@
 }
 /* Base Style Selectors*/
 header {
-  background-color: lightblue;
+  background-color: lightgrey;
   padding: 1em 0;
   overflow: hidden;
 }
@@ -57,6 +57,9 @@ div  {
   max-width: 70%;
   margin: 5px 5px 15px 5px;
 }
+.main-footer {
+  border-top: solid lightgrey;
+}
 .footer-nav ul {
   display: none;
 }
@@ -64,6 +67,10 @@ div  {
   display: inline-block;
   margin-right: 40px;
   max-width: 100%;
+}
+.footer-nav li p {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .student-name {
   float: left;
@@ -90,6 +97,10 @@ div  {
     float: left;
     vertical-align: top;
     }
+    .portfolio-items li:last-of-type {
+      float:none;
+      margin-top: 25px;
+    }
     .profile-bio {
       height: 400px;
     }
@@ -110,9 +121,7 @@ div  {
     .top {
       display: none;
     }
-    .portfolio-items li:last-of-type {
-      float:none;
-  }
+}
 
 
 
@@ -136,6 +145,7 @@ div  {
   }
   .portfolio-items li:last-of-type {
     float:none;
+    margin-top: 20px;
   }
 
 .clearfix::after {
