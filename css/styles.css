@@ -1,32 +1,53 @@
 *{
   box-sizing: border-box;
 }
+
 /* Base Style Selectors*/
 header {
-  background-color: lightgrey;
   padding: 1em 0;
   overflow: hidden;
+  background-color: #7fd3f7;
 }
 
 body {
-  width: 100;
+  background: #fafafa;
+  width: 100%;
   margin: 0 auto;
+  font-family: Nunito, arial, sans-serif;
+  font-size: 16px;
+  color: #666;
 }
+nav {
+  margin-bottom: 60px;
 
+}
+nav a:hover {
+  color: #fff;
+}
+nav a:active {
+  color: firebrick;
+}
 nav a {
   color: black;
   text-decoration: none;
 }
-
+nav ul {
+  margin: 0;
+  padding: 0;
+}
 nav li {
     list-style-type: none;
     text-align: center;
     text-transform: uppercase;
-  }
+    padding: 15px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    }
 
 h1 {
   font-size: 16px;
   margin-top: 0;
+  color: #fff;
 }
 
 h1, h2 {
@@ -35,41 +56,60 @@ h1, h2 {
 
 p {
   text-align: center;
-  font-size: 25px;
-  font-family: serif;
 }
 
 div  {
   text-align: center;
 }
-/* ID Selectors */
 
+/* ID Selectors */
+#portfolio {
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+#contact {
+  text-transform: uppercase;
+  font-size: 21px;
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
 
 /*Class Selectors*/
 .wrapper {
-  max-width: 1200px;
+  max-width: 90%;
   margin: 0 auto;
 }
-
+.profile-bio p {
+  font-family: sans-serif;
+}
+.profile-bio img {
+  max-width: 70%;
+}
+.portfolio {
+  background-color: #fff;
+  padding: 20px;
+}
 .portfolio-items {
   overflow: hidden;
   list-style: none;
   text-align: center;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding: 0;
+  margin: 0;
 }
 .portfolio-items li {
-  height: 500px;
+  margin-bottom: 40px;
+  height: 350px;
 }
 .portfolio-items li p {
   padding: 0 30px;
 }
 .portfolio-items li img {
-  max-width: 70%;
-  margin: 5px 5px 15px 5px;
+  max-width: 100%;
 }
-.main-footer {
-  border-top: solid lightgrey;
+.main-footer .wrapper {
+  border-top: 1px solid #eee;
+  margin-top: 60px;
 }
 .footer-nav ul {
   display: none;
@@ -81,17 +121,26 @@ div  {
 }
 .student-name {
   float: left;
+  margin-top: 14px;
 }
 .footer-nav li a {
   text-decoration: none;
+  color: #666;
 }
 .top a {
   float: right;
   text-decoration: none;
+  color: #666;
+  text-transform: uppercase;
 }
+
 
 /* Media Quries*/
 @media (min-width: 768px) {
+  header {
+    padding: 1em 0 3em;
+    overflow: hidden;
+  }
    h1 {
     text-align: center;
     }
@@ -100,19 +149,20 @@ div  {
       text-transform: uppercase;
       padding: 10px;
       display: inline-block;
+      background-color: transparent;
     }
   .portfolio-items li {
-    width: 49%;
+    width: 50%;
     display:inline-block;
     float: left;
     vertical-align: top;
+    padding: 0 5px;
     }
     .portfolio-items li:last-of-type {
       float:none;
       margin-top: 25px;
     }
     .profile-bio {
-      height: 400px;
     }
     .profile-bio img {
       float: right;
@@ -120,9 +170,6 @@ div  {
       margin-top: 5px;
       margin-right: 5px;
       clear: both;
-    }
-    .main-footer {
-      border-top: solid lightgrey;
     }
     .footer-nav ul {
       display: inline-block;
@@ -133,31 +180,21 @@ div  {
     }
 }
 
-
-
-
-
 @media (min-width: 1024px) {
-  .profile-bio img {
-   float: right;
-   margin: 5px 15px;
+  .wrapper {
+    max-width: 1200px;
   }
   .portfolio-items li {
     width: 33%;
     display:inline-block;
-  }
-  .footer-nav ul {
-    display: inline-block;
-    float: right;
-  }
-  .top {
-    display: none;
-  }
-  .portfolio-items li:last-of-type {
-    float:none;
-    margin-top: 20px;
-  }
-
+    float: left;
+    vertical-align: top;
+    padding: 0 5px;
+    }
+    .portfolio-items li:last-of-type {
+      float:none;
+      margin-top: 25px;
+    }
 .clearfix::after {
   content:"";
   display: table;
