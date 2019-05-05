@@ -19,10 +19,9 @@ body {
 }
 nav {
   margin-bottom: 60px;
-
 }
 nav a:hover {
-  color: #fff;
+  color:#af0005;
 }
 nav a:active {
   color: firebrick;
@@ -45,7 +44,7 @@ nav li {
     }
 
 h1 {
-  font-size: 16px;
+  font-size: 32px;
   margin-top: 0;
   color: #fff;
 }
@@ -134,7 +133,6 @@ div  {
   text-transform: uppercase;
 }
 
-
 /* Media Quries*/
 @media (min-width: 768px) {
   header {
@@ -151,6 +149,12 @@ div  {
       display: inline-block;
       background-color: transparent;
     }
+    nav a:hover {
+      color: #fff;
+    }
+    nav a:active {
+      color: firebrick;
+   }
   .portfolio-items li {
     width: 50%;
     display:inline-block;
@@ -163,6 +167,7 @@ div  {
       margin-top: 25px;
     }
     .profile-bio {
+      margin: 20px 20px;
     }
     .profile-bio img {
       float: right;
@@ -181,6 +186,23 @@ div  {
 }
 
 @media (min-width: 1024px) {
+  h1 {
+    float:left;
+    margin-top: 0;
+    padding-left: 35px;
+  }
+  h3 {
+    padding-left: 25px;
+  }
+  nav ul {
+    float: right;
+  }
+  nav a:hover {
+    color: #fff;
+  }
+  nav a:active {
+    color: firebrick;
+  }
   .wrapper {
     max-width: 1200px;
   }
