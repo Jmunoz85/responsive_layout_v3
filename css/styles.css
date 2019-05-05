@@ -6,11 +6,12 @@
 header {
   padding: 1em 0;
   overflow: hidden;
+  background-color: #7fd3f7;
 }
 
 body {
   background: #fafafa;
-  width: 100;
+  width: 100%;
   margin: 0 auto;
   font-family: Nunito, arial, sans-serif;
   font-size: 16px;
@@ -19,6 +20,12 @@ body {
 nav {
   margin-bottom: 60px;
 
+}
+nav a:hover {
+  color: #fff;
+}
+nav a:active {
+  color: firebrick;
 }
 nav a {
   color: black;
@@ -40,6 +47,7 @@ nav li {
 h1 {
   font-size: 16px;
   margin-top: 0;
+  color: #fff;
 }
 
 h1, h2 {
@@ -53,6 +61,7 @@ p {
 div  {
   text-align: center;
 }
+
 /* ID Selectors */
 #portfolio {
   text-transform: uppercase;
@@ -71,8 +80,12 @@ div  {
   max-width: 90%;
   margin: 0 auto;
 }
+.profile-bio p {
+  font-family: sans-serif;
+}
 .profile-bio img {
   max-width: 70%;
+  
 }
 .portfolio {
   background-color: #fff;
@@ -113,6 +126,7 @@ div  {
 }
 .footer-nav li a {
   text-decoration: none;
+  color: #666;
 
 }
 .top a {
@@ -121,6 +135,7 @@ div  {
   color: #666;
   text-transform: uppercase;
 }
+
 
 /* Media Quries*/
 @media (min-width: 768px) {
